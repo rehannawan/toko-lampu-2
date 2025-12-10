@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Awan Cerah - Produk</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(140deg, #0f0f17, #1e1f30);
+        color: white;
+    }
+
+    /* HEADER */
+    header {
+        width: 100%;
+        padding: 22px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(15,17,30,0.7);
+        backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(255,255,255,0.12);
+        z-index: 1000;
+    }
+
+    .brand {
+        font-size: 32px;
+        font-weight: 700;
+        color: #ffd24c;
+        text-shadow: 0 0 10px #ffd24c;
+        margin-bottom: 12px;
+    }
+
+    nav {
+        display: flex;
+        gap: 25px;
+        padding: 10px 25px;
+        background: rgba(255,255,255,0.06);
+        border-radius: 50px;
+        backdrop-filter: blur(25px);
+        border: 1px solid rgba(255,255,255,0.15);
+        box-shadow: 0 0 12px rgba(255,210,76,0.08);
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #d2dbff;
+        font-weight: 500;
+        padding: 10px 20px;
+        border-radius: 40px;
+        transition: 0.35s;
+    }
+
+    nav a:hover {
+        background: rgba(255,210,76,0.18);
+        color: #ffd24c;
+        box-shadow: 0 0 12px rgba(255,210,76,0.4);
+    }
+
+    nav a.active {
+        background: rgba(255,210,76,0.3);
+        color: #1a1a1a;
+        font-weight: 600;
+        box-shadow: 0 0 12px rgba(255,210,76,0.7);
+    }
+
+    /* CONTENT */
+    .container {
+        padding: 150px 40px 60px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 42px;
+        color: #ffd24c;
+        text-shadow: 0 0 12px #ffd24c;
+    }
+
+    .desc {
+        font-size: 20px;
+        margin-top: 10px;
+        color: #dcdcdc;
+    }
+
+    /* GRID PRODUK */
+    .produk-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 30px;
+        margin-top: 50px;
+    }
+
+    .card {
+        background: rgba(255,255,255,0.06);
+        padding: 18px;
+        border-radius: 18px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,255,255,0.1);
+        transition: 0.35s;
+        text-align: center;
+    }
+
+    .card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 0 18px rgba(255,210,76,0.4);
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 12px;
+        margin-bottom: 12px;
+    }
+
+    .card h3 {
+        color: #ffd24c;
+        margin-bottom: 6px;
+    }
+
+    .card p {
+        color: #e8e8e8;
+        font-size: 17px;
+        margin-bottom: 8px;
+    }
+</style>
+
+</head>
+<body>
+
+<header>
+    <div class="brand">Awan Cerah</div>
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="produk.html" class="active">Produk</a>
+        <a href="profil.html">Profil Pemilik</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Produk Lampu Terjangkau</h1>
+    <p class="desc">Berbagai pilihan lampu kualitas terbaik dengan harga ramah untuk masyarakat.</p>
+
+    <div class="produk-grid">
+
+        <div class="card">
+            <img src="img/lampu1.jpeg" alt="Lampu LED 5W">
+            <h3>Lampu LED 5W</h3>
+            <p>Rp 12.000</p>
+        </div>
+
+        <div class="card">
+            <img src="img/lampu2" alt="Lampu Bohlam Warm">
+            <h3>Lampu Bohlam Warm 9W</h3>
+            <p>Rp 14.000</p>
+        </div>
+
+        <div class="card">
+            <img src="img/lampu3.jpg" alt="Lampu Emergency">
+            <h3>Lampu Emergency 12W</h3>
+            <p>Rp 25.000</p>
+        </div>
+
+        <div class="card">
+            <img src="img/lampu4.jpg" alt="Lampu Meja Mini">
+            <h3>Lampu Meja Mini</h3>
+            <p>Rp 20.000</p>
+        </div>
+
+        <div class="card">
+            <img src="img/lampu5.jpg" alt="Lampu Strip LED">
+            <h3>Lampu Strip LED 2M</h3>
+            <p>Rp 18.000</p>
+        </div>
+
+        <div class="card">
+            <img src="img/lampu6.jpeg" alt="Lampu Taman Surya">
+            <h3>Lampu Taman Tenaga Surya</h3>
+            <p>Rp 30.000</p>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
